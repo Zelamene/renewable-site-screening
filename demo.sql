@@ -31,3 +31,11 @@ CREATE TABLE exclusion_zones(
     name text,
     geom geometry(Polygon, 4326)
 );
+
+-- Indexes 
+CREATE INDEX ON candidate_sites USING GIST(geom);
+CREATE INDEX ON substations USING GIST(geom);
+CREATE INDEX ON exclusion_zones USING GIST(geom);
+
+\echo 'TABLES AND INDEXES CREATED'
+\echo '--------------------------'
