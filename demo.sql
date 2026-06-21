@@ -43,9 +43,9 @@ CREATE INDEX ON exclusion_zones USING GIST(geom);
 \echo 'SEEDING THE DB...'
 
 INSERT INTO candidate_sites (name, tech, geom) VALUES
-    ('Upington Solar', 'solar', ST_SetSRID(ST_MakePoint(21.256, -28.458), 4326)),
-    ('Kimberley Solar', 'solar', ST_SetSRID(ST_MakePoint(24.762, -28.742), 4326)),
-    ('Prieska Solar', 'solar', ST_SetSRID(ST_MakePoint(22.748, -29.665), 4326)),
+    ('Upington Solar', 'solar', ST_SetSRID(ST_MakePoint(21.256, -28.448), 4326)),
+    ('Kimberley Solar', 'solar', ST_SetSRID(ST_MakePoint(24.762, -28.741), 4326)),
+    ('Prieska Solar', 'solar', ST_SetSRID(ST_MakePoint(22.748, -29.664), 4326)),
     ('Augrabies Solar', 'solar', ST_SetSRID(ST_MakePoint(20.480, -28.400), 4326)),
 
     ('De Aar Wind', 'wind', ST_SetSRID(ST_MakePoint(24.012, -30.649), 4326)),
@@ -53,7 +53,7 @@ INSERT INTO candidate_sites (name, tech, geom) VALUES
 
 
 INSERT INTO substations (name, geom) VALUES
-    ('Upington SS', ST_SetSRID(ST_MakePoint(21.230, -28.465), 4326)),
+    ('Upington SS', ST_SetSRID(ST_MakePoint(21.230, -28.460), 4326)),
     ('Kimberley SS', ST_SetSRID(ST_MakePoint(23.990, -30.640), 4326)),
     ('De Aar SS', ST_SetSRID(ST_MakePoint(24.770, -28.730), 4326));
 
