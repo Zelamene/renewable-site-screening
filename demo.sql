@@ -54,8 +54,8 @@ INSERT INTO candidate_sites (name, tech, geom) VALUES
 
 INSERT INTO substations (name, geom) VALUES
     ('Upington SS', ST_SetSRID(ST_MakePoint(21.230, -28.460), 4326)),
-    ('Kimberley SS', ST_SetSRID(ST_MakePoint(23.990, -30.640), 4326)),
-    ('De Aar SS', ST_SetSRID(ST_MakePoint(24.770, -28.730), 4326));
+    ('De Aar SS', ST_SetSRID(ST_MakePoint(23.990, -30.640), 4326)),
+    ('Kimberley SS', ST_SetSRID(ST_MakePoint(24.770, -28.730), 4326));
 
 INSERT INTO exclusion_zones(name, geom) VALUES 
     ('Augrabies Conservation Block',
