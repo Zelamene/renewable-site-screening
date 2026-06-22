@@ -22,7 +22,7 @@ Renewable siting needs two early checks: is there a nearby grid connection, and 
 ## Run it
 
 ```bash
-docker compose up -d --build
+docker compose up -d
 ./run.sh
 ```
 

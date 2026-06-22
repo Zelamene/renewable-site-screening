@@ -1,1 +1,12 @@
-clear
+
+services:
+  db:
+    build: .
+    container_name: pg-gis
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./boundary_data:/data
