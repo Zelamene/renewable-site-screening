@@ -21,6 +21,12 @@ Renewable siting needs two early checks: is there a nearby grid connection, and 
 
 ## Run it
 
+Copy the env template and set your own password:
+```bash
+cp .env.example .env
+```
+
+Then:
 ```bash
 docker compose up -d
 ./run.sh
