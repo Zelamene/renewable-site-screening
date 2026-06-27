@@ -1,7 +1,7 @@
 --  Boundary queries - run against municipal polygons that were
 --  loaded from a shapefile with shp2pgsql
 
-\echo '--------------------------------------------'
+\echo '-------------------------------------------'
 \echo ' Loaded boundary layer'
 \echo '--------------------------------------------'
 SELECT count(*) AS municipalities_loaded FROM municipalities;
